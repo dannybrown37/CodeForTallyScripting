@@ -4,7 +4,6 @@
 
 import simplejson
 from airtable import Airtable
-from pprint import pprint
 from collections import OrderedDict
 
 BASE_ID = "app38cZA2uPDxdTL8" # found in url of API documentation for table
