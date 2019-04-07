@@ -1,19 +1,41 @@
 [
   {
-    "name": "Harmany",
-    "desc": "Emergency and evacuation home sharing; connects people to willing hosts.",
-    "icons": [
-      "recrNSeAoSjfJzsh9",
-      "recY62j8JOubrT6cv"
-    ]
-  },
+    "name": "Harmany", 
+    "desc": "Emergency and evacuation home sharing; connects people to willing hosts.", 
+    "icons": "recY62j8JOubrT6cv"
+  }, 
   {
-    "name": "Crowdsource Rescue",
-    "desc": "Get help when 911 is overwhelmed: citizen first responders, wellness checks, and debris removal.",
-    "icons": [
-      "rec9FiAIrY9PuovoV",
-      "recLkkGeHD9MRCUnJ",
-      "recauUhuAhDfWJlwH"
-    ]
+    "name": "Red Cross Safe and Well", 
+    "desc": "Register with the Red Cross as 'safe and well', search for messages from loved ones, and reconnect with family members."
+  }, 
+  {
+    "name": "Fire Chat", 
+    "desc": "No cell service? No WiFi? No problem. FireChat was created to allow you to communicate when all other required infrastructure is not functioning."
+  }, 
+  {
+    "name": "Airbnb", 
+    "desc": "Free, temporary housing to people who have needed to leave their home due to conflict, disasters, or medical care.", 
+    "icons": "rec2Gmg89pymR1ULP"
+  }, 
+  {
+    "name": "Crowdsource Rescue", 
+    "desc": "Get help when 911 is overwhelmed: citizen first responders, wellness checks, and debris removal.", 
+    "icons": "recauUhuAhDfWJlwH"
+  }, 
+  {
+    "name": "JEA Water Outages", 
+    "icons": "rec4XA5tYmJeF4jp2"
+  }, 
+  {
+    "name": "CFA Shelter Project", 
+    "desc": "Code For America realtime, crowdsourced shelter locator and capacity tracker. Use your phones GPS to find the closest open shelter, even if you have pets or special needs; avoid going to a shelter only to learn it's full."
+  }, 
+  {
+    "name": "JEA Power Outages", 
+    "icons": "recjqCbl99AFIgKJF"
+  }, 
+  {
+    "name": "JAX Ready", 
+    "desc": "City's official emergency management App. Use your phones GPS to detect whether you're in an evacution zone. Get hyper-localized, up-to-the-minute threat levels, weather reports, wildfire updates, news feeds, find shelters, etc. Register medical special needs."
   }
 ]

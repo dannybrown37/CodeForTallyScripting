@@ -1,8 +1,9 @@
-# requires pip install airtable
+# requires
+# pip install airtable
 # and
 # pip install airtable-python-wrapper
 
-import simplejson
+import json
 from airtable import Airtable
 from collections import OrderedDict
 
@@ -15,10 +16,23 @@ records = airtable.get_all()
 service_list = []
 for record in records:
     od = OrderedDict()
-    od['name'] = record['fields']['Name']
-    od['desc'] = record['fields']['Desc']
-    od['icons'] = record['fields']['Icons']
+    try:
+        od['name'] = record['fields']['Name']
+    except KeyError:
+        pass
+    try:
+        od['desc'] = record['fields']['Desc']
+    except KeyError:
+        pass
+    try:
+        for record_id in record['fields']['Icons']:
+            od["icons"] = record_id
+            # TODO access Icon table and get its fields
+            #od["icons"]["icon"] = record_id["icon"]
+            #od["icons"]["text"] = record_id["text"]
+    except KeyError:
+        pass
     service_list.append(od)
 
 with open("output.json", "w") as f:
-    simplejson.dump(service_list, f, indent=2)
+    json.dump(service_list, f, indent=2)
