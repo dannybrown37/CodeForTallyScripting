@@ -31,10 +31,15 @@ for record in records:
                 "text" : "",
                 "icon" : ""
             })
-            od['icons'][index]['text'] = record['fields']['text']
-            od['icons'][index]['icon'] = record['fields']['icon']
+            try:
+                od['icons'][index]['text'] = record['fields']['text']
+            except KeyError:
+                pass
+            try:
+                od['icons'][index]['icon'] = record['fields']['icon']
+            except KeyError:
+                pass
     except KeyError:
-        print "passing"
         pass
     if od['icons'] == []:
         del od['icons']
