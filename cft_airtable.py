@@ -6,6 +6,7 @@ import json
 import airtable
 from airtable import Airtable
 
+# need environment variable AIRTABLE_API_KEY = 'apikey'
 BASE_ID = "app38cZA2uPDxdTL8" # found in url of API documentation for table
 TABLE_NAME = "Services"
 
