@@ -1,12 +1,15 @@
 body {
   font-family: 'Open Sans', sans-serif;
   min-height: 95vh;
-
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
 
+#cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: .69vw;
 }
 
 .card {
@@ -14,10 +17,15 @@ body {
   height: 150px;
   display: flex;
   flex-direction: column;
-  border: 1px solid;
+  box-shadow: rgba(0,0,0,0.8) 0 0 6px;
   border-radius: 4px;
   overflow: hidden;
   margin: 5px;
+}
+
+.card:hover {
+  box-shadow: rgba(0,0,0,0.8) 0 0 10px;
+  background: #FFEBEE;
 }
 
 .card-header {
@@ -44,13 +52,26 @@ body {
 }
 
 .main-description {
-  font-family: roboto, sans-serif;
-  padding: 2px 3px;
+  display: none;
+}
+
+.card:hover .main-description {
+  display: block;
+  font-family: Roboto, sans-serif;
+  padding: 4px 5px;
   line-height: 12px;
   font-size: 10px;
   text-align: center;
   position: absolute;
   top: 5px;
+}
+
+.button img {
+  height: 89px;
+}
+
+.card:hover .button img {
+  display: none;
 }
 
 .footer {
@@ -59,11 +80,6 @@ body {
   text-align: center;
   position: absolute;
   bottom: 0;
-}
-
-#cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
 
 

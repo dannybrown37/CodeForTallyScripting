@@ -18,9 +18,16 @@
             <div class="footer">
               <table>
                 <tr>
+                  <td>
+                    <a class="button">
+                      <img src={{ url_for('static', filename='placeholder.png') }} />
+                    </a>
+                  </td>
+                  <!-- I'll come back to this later when I have icons
                   {% for icon in card.icons %}
                     <td><a class="button"><i class="{{ icon.symbol }}"></i></a></td>
                   {% endfor %}
+                  -->
                 </tr>
                 <tr>
                   {% for icon in card.icons %}
