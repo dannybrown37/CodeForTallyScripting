@@ -1,0 +1,87 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  min-height: 95vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.card {
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 5px;
+}
+
+.card-header {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 600;
+  border-bottom: 1px solid;
+  padding: 5px 10px;
+}
+
+.card-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  height: 175px;
+  position: relative;
+}
+
+.material-icons {
+  font-size: 36px;
+  margin-bottom: 5px;
+}
+
+.main-description {
+  font-family: roboto, sans-serif;
+  padding: 2px 3px;
+  line-height: 12px;
+  font-size: 10px;
+  text-align: center;
+  position: absolute;
+  top: 5px;
+}
+
+.footer {
+  line-height: 8px;
+  font-size: 10px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+
+#cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+/* IDs for additional colors*/
+/* Colors from Google Material Design: https://material.io/guidelines/style/color.html*/
+
+.blu {
+  background-color: #E0F7FA;
+}
+
+.red {
+  background-color: #FFEBEE;
+}
+
+.yel {
+  background-color: #FFF8E1;
+}
+
+.grn {
+  background-color: #F1F8E9;
+}
