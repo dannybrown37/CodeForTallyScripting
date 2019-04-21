@@ -16,22 +16,15 @@
           <div class="card-main">
             <div class="main-description">{{ card.desc }}</div>
             <div class="footer">
-              <table>
-                <tr>
-                  <td>
-                    <a class="button">
-                      <img src={{ url_for('static', filename='placeholder.png') }} />
-                    </a>
-                  </td>
-                  <!-- I'll come back to this later when I have icons
+              <table class="icon-section">
+                <tr class="icons">
                   {% for icon in card.icons %}
-                    <td><a class="button"><i class="{{ icon.symbol }}"></i></a></td>
+                    <td><a class="button"><i class="{{ icon.icon }}"></i></a></td>
                   {% endfor %}
-                  -->
                 </tr>
-                <tr>
+                <tr class="icon-captions">
                   {% for icon in card.icons %}
-                    <td><small>{{ icon.label }}</small></td>
+                    <td><small>{{ icon.text }}</small></td>
                   {% endfor %}
                 </tr>
               </table>
@@ -40,5 +33,6 @@
         </div>
       {% endfor %}
     </div>
+
   </body>
 </html>

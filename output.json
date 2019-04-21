@@ -1,86 +1,132 @@
 [
   {
-    "desc": "Emergency and evacuation home sharing; connects people to willing hosts.", 
-    "name": "Harmany", 
     "icons": [
       {
-        "text": "Need a place", 
-        "icon": ""
-      }, 
+        "text": "Need a place",
+        "icon": "fas fa-house-damage fa-lg"
+      },
       {
-        "text": "Have a place", 
-        "icon": ""
+        "text": "Have a place",
+        "icon": "fas fa-home fa-lg"
       }
-    ]
-  }, 
+    ],
+    "name": "Harmany",
+    "desc": "Emergency and evacuation home sharing; connects people to willing hosts."
+  },
   {
-    "desc": "Register with the Red Cross as 'safe and well', search for messages from loved ones, and reconnect with family members.", 
-    "name": "Red Cross Safe and Well"
-  }, 
-  {
-    "desc": "No cell service? No WiFi? No problem. FireChat was created to allow you to communicate when all other required infrastructure is not functioning.", 
-    "name": "Fire Chat"
-  }, 
-  {
-    "desc": "Free, temporary housing to people who have needed to leave their home due to conflict, disasters, or medical care.", 
-    "name": "Airbnb", 
     "icons": [
       {
-        "text": "11,000+ temporary homes provided.", 
-        "icon": ""
+        "text": "Check on a loved one.",
+        "icon": "fas fa-user-shield fa-lg"
+      },
+      {
+        "text": "Report yourself safe.",
+        "icon": "fas fa-save fa-lg"
       }
-    ]
-  }, 
+    ],
+    "name": "Red Cross Safe &  Well",
+    "desc": "Register with the Red Cross as 'safe and well', search for messages from loved ones, and reconnect with family members."
+  },
   {
-    "desc": "Get help when 911 is overwhelmed: citizen first responders, wellness checks, and debris removal.", 
-    "name": "Crowdsource Rescue", 
     "icons": [
       {
-        "text": "18,500+ recuers & volunteers", 
+        "text": "Fi-fi-fi-fire!",
+        "icon": "fas fa-fire fa-lg"
+      }
+    ],
+    "name": "Fire Chat",
+    "desc": "No cell service? No WiFi? No problem. FireChat was created to allow you to communicate when all other required infrastructure is not functioning."
+  },
+  {
+    "icons": [
+      {
+        "text": "11,000+ temporary homes provided.",
+        "icon": "fas fa-warehouse fa-lg"
+      }
+    ],
+    "name": "Airbnb",
+    "desc": "Free, temporary housing to people who have needed to leave their home due to conflict, disasters, or medical care."
+  },
+  {
+    "icons": [
+      {
+        "text": "18,500+ recuers & volunteers",
         "icon": "fas fa-first-aid fa-lg"
-      }, 
+      },
       {
-        "text": "46,000+ survivors helped", 
-        "icon": ""
-      }, 
-      {
-        "text": "14 incidents (since 2017)", 
-        "icon": ""
+        "text": "46,000+ survivors helped",
+        "icon": "fas fa-ambulance fa-lg"
       }
-    ]
-  }, 
+    ],
+    "name": "Crowdsource Rescue",
+    "desc": "Get help when 911 is overwhelmed: citizen first responders, wellness checks, and debris removal."
+  },
   {
-    "name": "JEA Water Outages", 
     "icons": [
       {
-        "text": "Water Outage Map.", 
-        "icon": ""
-      }, 
+        "text": "Water Outage Map.",
+        "icon": "fas fa-tint-slash fa-lg"
+      },
       {
-        "text": "Report Water Outage.", 
-        "icon": ""
+        "text": "Report Water Outage.",
+        "icon": "fas fa-water fa-lg"
       }
-    ]
-  }, 
+    ],
+    "name": "JEA Water Outages",
+    "desc": "Report water outages in Jacksonville."
+  },
   {
-    "desc": "Code For America realtime, crowdsourced shelter locator and capacity tracker. Use your phones GPS to find the closest open shelter, even if you have pets or special needs; avoid going to a shelter only to learn it's full.", 
-    "name": "CFA Shelter Project"
-  }, 
-  {
-    "name": "JEA Power Outages", 
     "icons": [
       {
-        "text": "Power Outage Map.", 
-        "icon": ""
-      }, 
-      {
-        "text": "Report Power Outage.", 
-        "icon": ""
+        "text": "Find a concert",
+        "icon": "fas fa-music fa-lg"
       }
-    ]
-  }, 
+    ],
+    "name": "TallyMusic",
+    "desc": "Find music events in and around Tallahassee"
+  },
   {
-    "desc": "City's official emergency management App. Use your phones GPS to detect whether you're in an evacution zone. Get hyper-localized, up-to-the-minute threat levels, weather reports, wildfire updates, news feeds, find shelters, etc. Register medical special needs.", 
-    "name": "JAX Ready"
+    "icons": [
+      {
+        "text": "Stay connected in and around Tallahassee",
+        "icon": "fas fa-toggle-on fa-lg"
+      }
+    ],
+    "name": "Leon County Citizens Connect",
+    "desc": "Leon County mobile tool to request services, provide up-to-date emergency information, and stay connected with the community."
+  },
+  {
+    "icons": [
+      {
+        "text": "Gimme shelter",
+        "icon": "fas fa-igloo fa-lg"
+      }
+    ],
+    "name": "CFA Shelter Project",
+    "desc": "Code For America realtime, crowdsourced shelter locator and capacity tracker. Use your phones GPS to find the closest open shelter, even if you have pets or special needs; avoid going to a shelter only to learn it's full."
+  },
+  {
+    "icons": [
+      {
+        "text": "Power Outage Map.",
+        "icon": "fas fa-power-off fa-lg"
+      },
+      {
+        "text": "Report Power Outage.",
+        "icon": "fas fa-battery-empty fa-lg"
+      }
+    ],
+    "name": "JEA Power Outages",
+    "desc": "Report power outages in Jacksonville."
+  },
+  {
+    "icons": [
+      {
+        "text": "Ready for love (and emergencies)",
+        "icon": "fas fa-heart fa-lg"
+      }
+    ],
+    "name": "JAX Ready",
+    "desc": "City's official emergency management App. Use your phones GPS to detect whether you're in an evacution zone. Get hyper-localized, up-to-the-minute threat levels, weather reports, wildfire updates, news feeds, find shelters, etc. Register medical special needs."
   }
 ]
