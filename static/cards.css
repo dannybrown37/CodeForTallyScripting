@@ -8,8 +8,9 @@ body {
 
 #cards {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: .69vw;
+  width: 60%;
+  grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
+  grid-gap: .5em;
 }
 
 .card {
@@ -91,7 +92,7 @@ body {
 }
 
 
-/* IDs for additional colors*/
+/* Classes for additional colors*/
 /* Colors from Google Material Design: https://material.io/guidelines/style/color.html*/
 
 .blu {
