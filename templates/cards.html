@@ -9,13 +9,13 @@
     <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='cards.css') }}>
   </head>
   <body>
+  
     <div id="cards">
       {% for card in cards %}
-        <div class="card">
-          <div class="card-header blu">{{ card.name }}</div>
-          <div class="card-main">
-            <div class="main-description">{{ card.desc }}</div>
-            <div class="footer">
+        <div class="flip-card">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <div class="card-header blu">{{ card.name }}</div>
               <table class="icon-section">
                 <tr class="icons">
                   {% for icon in card.icons %}
@@ -28,6 +28,10 @@
                   {% endfor %}
                 </tr>
               </table>
+            </div>
+            <div class="flip-card-back">
+              <div class="card-header red">{{ card.name }}</div>
+              <div class="main-description">{{ card.desc }}</div>
             </div>
           </div>
         </div>

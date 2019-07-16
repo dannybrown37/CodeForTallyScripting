@@ -13,9 +13,16 @@ body {
   grid-gap: .5em;
 }
 
-.card {
+/* The flip card container - set the width and height to whatever you want.
+   We have added the border property to demonstrate that the flip itself goes
+   out of the box on hover (remove perspective if you don't want the 3D effect
+   https://www.w3schools.com/howto/howto_css_flip_card.asp
+ */
+.flip-card {
+  background-color: transparent;
   width: 150px;
   height: 150px;
+  perspective: 1000px;
   display: flex;
   flex-direction: column;
   box-shadow: rgba(0,0,0,0.8) 0 0 6px;
@@ -24,9 +31,23 @@ body {
   margin: 5px;
 }
 
-.card:hover {
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-card:hover {
   box-shadow: rgba(0,0,0,0.8) 0 0 10px;
-  background: #FFEBEE;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
 }
 
 .card-header {
@@ -37,60 +58,46 @@ body {
   padding: 5px 10px;
 }
 
-.card-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  height: 175px;
-  position: relative;
-}
-
-.material-icons {
-  font-size: 36px;
-  margin-bottom: 5px;
-}
-
-.main-description {
-  display: none;
-}
-
-.card:hover .main-description {
-  display: block;
-  font-family: Roboto, sans-serif;
-  padding: 4px 5px;
-  line-height: 12px;
-  font-size: 10px;
-  text-align: center;
-  position: absolute;
-  top: 5px;
-}
-
-.button img {
-  height: 89px;
-}
-
-.card:hover .button img {
-  display: none;
-}
-
 .icon-section {
   line-height: 16px;
   font-size: 16px;
   text-align: center;
   display: grid;
   place-items: center;
+  margin-top: 20%;
 }
 
-.card:hover .footer {
-  display: none;
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
 }
 
-.footer.icons {
-  margin-bottom: 2em;
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
 }
 
+/* Style the back side */
+.flip-card-back {
+  background-color: #F1F8E9;
+  transform: rotateY(180deg);
+  position: absolute;
+}
+
+.main-description {
+  display: block;
+  font-family: Roboto, sans-serif;
+  line-height: 12px;
+  font-size: 10px;
+  text-align: center;
+  position: relative;
+  top: 5px;
+  padding: 0 2%;
+}
 
 /* Classes for additional colors*/
 /* Colors from Google Material Design: https://material.io/guidelines/style/color.html*/

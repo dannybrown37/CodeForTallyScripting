@@ -1,6 +1,6 @@
 import json
 from flask import Flask, render_template
-from airtable_call import airtable_call
+from modules.airtable_call import airtable_call
 
 
 # CARDS_PER_ROW = 3
