@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
     <link rel="stylesheet" type="text/css" href={{ url_for('static', filename='cards.css') }}>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   </head>
   <body>
 
@@ -26,7 +27,7 @@
 
     <div id="cards" class="little-cards">
       {% for card in cards %}
-        <div class="flip-card">
+        <a class="flip-card" href="#">
           <div class="flip-card-inner">
             <div class="flip-card-front">
               <div class="card-header blu">{{ card.name }}</div>
@@ -48,7 +49,7 @@
               <div class="main-description">{{ card.desc }}</div>
             </div>
           </div>
-        </div>
+        </a>
       {% endfor %}
     </div>
 

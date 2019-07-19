@@ -63,6 +63,10 @@ body {
   margin: 5px;
 }
 
+.flip-card:link, .flip-card:hover, .flip-card:active, .flip-card:visited {
+  color: black;
+}
+
 .big-card {
   width: 250px;
   height: 400px;
