@@ -6,17 +6,49 @@ body {
   justify-content: center;
 }
 
+/* button to let user choose big or small cards */
+#card-resizer {
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
+/* inside #card-resizer */
+#flip-button {
+  background-color: transparent;
+  width: 10em;
+  height: 1.69em;
+  perspective: 1000px;
+  box-shadow: rgba(0,0,0,0.8) 0 0 6px;
+  border-radius: 4px;
+  margin: 5px;
+}
+
+/* works with JS to make card resizer button flip on click */
+.big-cards-active {
+  transform: rotateY(180deg);
+}
+
+/* div holding cards */
 #cards {
   display: grid;
   width: 60%;
-  grid-template-columns: repeat( auto-fit, minmax(150px, 1fr) );
   grid-gap: .5em;
+}
+
+.little-cards {
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.big-cards {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); !important
 }
 
 /* The flip card container - set the width and height to whatever you want.
    We have added the border property to demonstrate that the flip itself goes
    out of the box on hover (remove perspective if you don't want the 3D effect
    https://www.w3schools.com/howto/howto_css_flip_card.asp
+
  */
 .flip-card {
   background-color: transparent;
@@ -29,6 +61,11 @@ body {
   border-radius: 4px;
   overflow: hidden;
   margin: 5px;
+}
+
+.big-card {
+  width: 250px;
+  height: 400px;
 }
 
 /* This container is needed to position the front and back side */
